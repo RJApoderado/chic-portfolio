@@ -1,0 +1,28 @@
+/* ========== Hero section ========== */
+.hero {
+  height: 110vh;
+  background-image: url(/public/image/hero-banner-template-2000w.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 10; /* -------------------- z-index val 10 ---------- */
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 100%, 
+    97% 95%, 94% 97%, 91% 95%, 88% 97%, 85% 95%, 82% 97%, 79% 95%, 76% 97%, 
+    73% 95%, 70% 97%, 67% 95%, 64% 97%, 61% 95%, 58% 97%, 55% 95%, 52% 97%, 
+    49% 95%, 46% 97%, 43% 95%, 40% 97%, 37% 95%, 34% 97%, 31% 95%, 28% 97%, 
+    25% 95%, 22% 97%, 19% 95%, 16% 97%, 13% 95%, 10% 97%, 7% 95%, 4% 97%, 
+    0% 100%
+  );
+}
+
+/* ---------- Hero section--md ---------- */
+@media screen and (max-width: 48rem) {
+  .hero{
+    padding: 0;
+  }
+}
